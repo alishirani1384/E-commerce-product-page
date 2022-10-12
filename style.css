@@ -125,6 +125,7 @@ main {
 .preview img:hover {
   opacity: 60%;
 }
+
 .selected {
   border: 2px solid var(--Orange);
   opacity: 50%;
@@ -265,6 +266,9 @@ main {
     flex-direction: column;
     background-color: var(--White);
   }
+  .nav_link:hover::after{ 
+  bottom: -15px;
+  }
   .active{
     display: flex;
   }
@@ -300,6 +304,7 @@ main {
     display: none;
   }
   .mobile-thumb {
+    position: relative;
     display: flex;
     overflow-x: hidden;
     min-width: 95vw;
@@ -330,4 +335,37 @@ main {
     width: 100%;
     margin-left: 0;
   }
+  #next{
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  border: none;
+  background-color: var(--White);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+  #previous{
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  border: none;
+  background-color: var(--White);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+#previous img,#next img{
+  width: 15px;
+}
 }

@@ -14,6 +14,7 @@
   </head>
   <body>
     <div class="container">
+      <!-- navbar -->
       <nav>
         <div class="nav_container">
           <div class="nav_left-sec">
@@ -22,7 +23,7 @@
             <div class="overlay">
             </div>
             <ul class="nav_links">
-              <img src="./images/icon-close.svg" alt="close" class="close-btn">
+              <img src="./images/icon-close.svg" alt="close" class="close-btn hidden">
               <li class="nav_link">Collections</li>
               <li class="nav_link">Men</li>
               <li class="nav_link">Women</li>
@@ -37,6 +38,7 @@
         </div>
       </nav>
       <main>
+        <!-- thumbnails -->
         <section class="thumbnails">
           <img
             src="./images/image-product-1.jpg"
@@ -44,10 +46,9 @@
             class="main-thumbnail invisible"
           />
           <div class="mobile-thumb hidden">
-            <img src="./images/image-product-1.jpg" alt="product" />
-            <img src="./images/image-product-2.jpg" alt="product" />
-            <img src="./images/image-product-3.jpg" alt="product" />
-            <img src="./images/image-product-4.jpg" alt="product" />
+            <img src="./images/image-product-1.jpg" class="thumb-mob" alt="product" />
+            <button id="next"><img src="./images/icon-next.svg" alt="next"></button>
+            <button id="previous"><img src="./images/icon-previous.svg" alt="previos"></button>
           </div>
           <div>
             <div class="preview">
@@ -62,6 +63,7 @@
             </div>
           </div>
         </section>
+        <!-- content -->
         <section class="content">
           <p class="company">Sneaker Company</p>
           <h1 class="title">Fall Limited Edition Sneakers</h1>
@@ -79,9 +81,9 @@
           </div>
           <div class="buttons">
             <div class="amount-btn">
-              <button><img src="./images/icon-minus.svg" alt="minus" /></button>
+              <button id="minus"><img src="./images/icon-minus.svg" alt="minus" /></button>
               <p class="amount">0</p>
-              <button><img src="./images/icon-plus.svg" alt="plus" /></button>
+              <button id="plus"><img src="./images/icon-plus.svg" alt="plus" /></button>
             </div>
             <button class="add_btn">
               <img src="./images/icon-cart.svg" alt="cart" />
@@ -91,6 +93,7 @@
         </section>
       </main>
     </div>
+    <!-- cart template -->
     <script src="./app.js"></script>
   </body>
 </html>
