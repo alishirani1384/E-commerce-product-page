@@ -311,11 +311,12 @@ main {
     overflow-x: hidden;
     min-width: 95vw;
     margin-top: -.5rem;
+    z-index: 1;
   }
   .mobile-thumb img {
     object-fit: cover;
     width: 100%;
-
+    z-index: 1;
   }
   .title {
     font-size: 2.2rem;
