@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav_container">
+          <div class="nav_left-sec">
+            <img src="./images/icon-menu.svg" id="menu-btn" alt="menu" class="hidden menu" />
+            <img src="./images/logo.svg" alt="logo" class="nav_logo" />
+            <div class="overlay">
+            </div>
+            <ul class="nav_links">
+              <img src="./images/icon-close.svg" alt="close" class="close-btn">
+              <li class="nav_link">Collections</li>
+              <li class="nav_link">Men</li>
+              <li class="nav_link">Women</li>
+              <li class="nav_link">About</li>
+              <li class="nav_link">Contact</li>
+            </ul>
+          </div>
+          <div class="nav_right-sec">
+            <img src="./images/icon-cart.svg" alt="cart" class="cart" />
+            <img src="./images/image-avatar.png" alt="avatar" class="avatar" />
+          </div>
+        </div>
+      </nav>
+      <main>
+        <section class="thumbnails">
+          <img
+            src="./images/image-product-1.jpg"
+            alt="product"
+            class="main-thumbnail invisible"
+          />
+          <div class="mobile-thumb hidden">
+            <img src="./images/image-product-1.jpg" alt="product" />
+            <img src="./images/image-product-2.jpg" alt="product" />
+            <img src="./images/image-product-3.jpg" alt="product" />
+            <img src="./images/image-product-4.jpg" alt="product" />
+          </div>
+          <div>
+            <div class="preview">
+              <img
+                class="selected"
+                src="./images/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+              <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+              <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+              <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="content">
+          <p class="company">Sneaker Company</p>
+          <h1 class="title">Fall Limited Edition Sneakers</h1>
+          <p class="info">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price">
+            <div class="new-price">
+              <p class="now">$125.00</p>
+              <span>50%</span>
+            </div>
+            <p class="old-price">$250.00</p>
+          </div>
+          <div class="buttons">
+            <div class="amount-btn">
+              <button><img src="./images/icon-minus.svg" alt="minus" /></button>
+              <p class="amount">0</p>
+              <button><img src="./images/icon-plus.svg" alt="plus" /></button>
+            </div>
+            <button class="add_btn">
+              <img src="./images/icon-cart.svg" alt="cart" />
+              Add to cart
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
