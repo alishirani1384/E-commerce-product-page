@@ -11,6 +11,8 @@ const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("previous");
 const slider = document.querySelector(".mobile-thumb");
 const thumbMob = document.querySelector(".thumb-mob");
+const cartBtn = document.querySelector(".cart-btn");
+const cart=document.querySelector(".cart-wrp")
 let amountValue = 0;
 let img = 1;
 
@@ -48,6 +50,10 @@ function prevImage() {
     }
     thumbMob.src = `./images/image-product-${img}.jpg`;
 }
+function toggleCart() {
+    cart.classList.toggle("invisible");
+}
+
 images.forEach((image) => {
     image.addEventListener("click", () => {
         const lastImg = document.querySelectorAll(".selected");
@@ -81,3 +87,4 @@ plusBtn.addEventListener("click", handlePlus);
 minusBtn.addEventListener("click", handleMinus);
 nextBtn.addEventListener("click", nextImage);
 prevBtn.addEventListener("click", prevImage);
+cartBtn.addEventListener("click", toggleCart);

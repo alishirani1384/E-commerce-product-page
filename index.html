@@ -32,7 +32,16 @@
             </ul>
           </div>
           <div class="nav_right-sec">
-            <img src="./images/icon-cart.svg" alt="cart" class="cart" />
+            <div class="cart-container">
+              <button class="cart-btn"><img src="./images/icon-cart.svg" alt="cart" class="cart" /></button>
+              <div class="cart-wrp invisible">
+                <p class="cart-heading">Cart</p>
+                <div class="divider"></div>
+                <div class="cart-content empty">
+                  <p>Your cart is empty</p>
+                </div>
+              </div>
+            </div>
             <img src="./images/image-avatar.png" alt="avatar" class="avatar" />
           </div>
         </div>
@@ -43,7 +52,7 @@
           <img
             src="./images/image-product-1.jpg"
             alt="product"
-            class="main-thumbnail invisible"
+            class="main-thumbnail invisible-mob"
           />
           <div class="mobile-thumb hidden">
             <img src="./images/image-product-1.jpg" class="thumb-mob" alt="product" />
@@ -93,7 +102,6 @@
         </section>
       </main>
     </div>
-    <!-- cart template -->
     <script src="./app.js"></script>
   </body>
 </html>
