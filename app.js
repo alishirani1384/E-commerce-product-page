@@ -22,7 +22,7 @@ const addBtn = document.querySelector(".add_btn");
 const indicator = document.querySelector(".indicator");
 const wrp = document.querySelector(".cart-content");
 let amountValue = 0;
-let img = 1;
+let currentImg = 1;
 
 indicator.style.display = "none";
 function openMenu() {
@@ -44,20 +44,20 @@ function handleMinus() {
   amount.innerText = amountValue;
 }
 function nextImage() {
-  if (img == 4) {
-    img = 1;
+  if (currentImg == 4) {
+    currentImg = 1;
   } else {
-    img++;
+    currentImg++;
   }
-  thumbMob.src = `./images/image-product-${img}.jpg`;
+  thumbMob.src = `./images/image-product-${currentImg}.jpg`;
 }
 function prevImage() {
-  if (img == 1) {
-    img = 4;
+  if (currentImg == 1) {
+    currentImg = 4;
   } else {
-    img--;
+    currentImg--;
   }
-  thumbMob.src = `./images/image-product-${img}.jpg`;
+  thumbMob.src = `./images/image-product-${currentImg}.jpg`;
 }
 function toggleCart() {
   cart.classList.toggle("invisible");
